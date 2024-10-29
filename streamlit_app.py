@@ -1,6 +1,5 @@
 import streamlit as st
+OURA_ACCESS_TOKEN=st.secrets["OURA_ACCESS_TOKEN"]
+client = OuraClient(OURA_ACCESS_TOKEN)
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+print(client.get_sleep_periods('2024-10-22'))

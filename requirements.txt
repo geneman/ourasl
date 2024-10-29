@@ -1,1 +1,2 @@
 streamlit
+oura_ring
